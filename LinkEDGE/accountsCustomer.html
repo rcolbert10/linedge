@@ -1,0 +1,1223 @@
+<!doctype html>
+
+<head>
+ <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/form_bootstrap_select.js"></script>
+    
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	
+	<script type="text/javascript" src="assets/js/pages/datatables_api.js"></script>
+	<!-- /theme JS files -->
+    
+    
+    
+
+</head>
+
+<body class="pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="-webkit-transform: translate3d(100%, 0px, 0px); transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
+   <!-- Main navbar -->
+    <div class="navbar navbar-inverse bg-teal-600">
+        <div class="navbar-header bg-teal-800">
+            <a class="navbar-brand" href="#"><img src="assets/images/EvolveFull_229x96.png" style="height: 48px; width: 114px; margin-top: -14px;">
+            </a>
+
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a>
+                </li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/flags/gb.png" class="position-left" alt=""> English
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="deutsch"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/flags/de.png" alt=""> Deutsch</a>
+                        </li>
+                        <li>
+                            <a class="ukrainian"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/flags/ua.png" alt=""> Українська</a>
+                        </li>
+                        <li>
+                            <a class="english"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/flags/gb.png" alt=""> English</a>
+                        </li>
+                        <li>
+                            <a class="espana"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/flags/es.png" alt=""> España</a>
+                        </li>
+                        <li>
+                            <a class="russian"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/flags/ru.png" alt=""> Русский</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-bubbles4"></i>
+                        <span class="visible-xs-inline-block position-right">Messages</span>
+                        <span class="badge bg-warning-400">2</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-content width-350">
+                        <div class="dropdown-content-heading">
+                            Messages
+                            <ul class="icons-list">
+                                <li><a href="#"><i class="icon-compose"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="media-list dropdown-content-body">
+                            <li class="media">
+                                <div class="media-left">
+                                    <img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/demo/users/face10.jpg" class="img-circle img-sm" alt="">
+                                    <span class="badge bg-danger-400 media-badge">5</span>
+                                </div>
+
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold">James Alexander</span>
+                                        <span class="media-annotation pull-right">04:58</span>
+                                    </a>
+
+                                    <span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <div class="media-left">
+                                    <img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/demo/users/face3.jpg" class="img-circle img-sm" alt="">
+                                    <span class="badge bg-danger-400 media-badge">4</span>
+                                </div>
+
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold">Margo Baker</span>
+                                        <span class="media-annotation pull-right">12:16</span>
+                                    </a>
+
+                                    <span class="text-muted">That was something he was unable to do because...</span>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <div class="media-left"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/demo/users/face24.jpg" class="img-circle img-sm" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold">Jeremy Victorino</span>
+                                        <span class="media-annotation pull-right">22:48</span>
+                                    </a>
+
+                                    <span class="text-muted">But that would be extremely strained and suspicious...</span>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <div class="media-left"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/demo/users/face4.jpg" class="img-circle img-sm" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold">Beatrix Diaz</span>
+                                        <span class="media-annotation pull-right">Tue</span>
+                                    </a>
+
+                                    <span class="text-muted">What a strenuous career it is that I've chosen...</span>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <div class="media-left"><img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/demo/users/face25.jpg" class="img-circle img-sm" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold">Richard Vango</span>
+                                        <span class="media-annotation pull-right">Mon</span>
+                                    </a>
+
+                                    <span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="dropdown-content-footer">
+                            <a href="#" data-popup="tooltip" title="" data-original-title="All messages"><i class="icon-menu display-block"></i></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="file:///C|/Users/Randy/Desktop/Admins/Limitless/Limitless/demo.interface.club/limitless/layout_1/LTR/assets/images/demo/users/face11.jpg" alt="">
+                        <span>Victoria</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right bg-teal">
+                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a>
+                        </li>
+                        <li><a href="#"><i class="icon-coins"></i> My balance</a>
+                        </li>
+                        <li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a>
+                        </li>
+                        <li><a href="#"><i class="icon-switch2"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- Page container -->
+    <div class="page-container" style="min-height:833px">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+           <!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="assets/images/demo/users/face11.jpg" class="img-circle img-sm" alt=""></a>
+								<div class="media-body">
+									<span class="media-heading text-semibold">Victoria Baker</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-pin text-size-small"></i> &nbsp;Santa Ana, CA
+									</div>
+								</div>
+
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#"><i class="icon-cog3"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="" data-original-title="Main pages"></i>
+                                </li>
+                                <li class="active"><a href="#"><i class="icon-chart"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-users"></i> <span>Accounts</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Customers</a>
+                                        </li>
+                                        <li><a href="#">Customer Types</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-copy"></i> <span>Orders</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Work Orders</a>
+                                        </li>
+                                        <li><a href="#">Sales Orders</a>
+                                        </li>
+                                        <li><a href="#">Estimates</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-hammer-wrench"></i> <span>Inventory</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Parts</a>
+                                        </li>
+                                        <li><a href="f#">Suppliers</a>
+                                        </li>
+                                        <li><a href="#">Product Classes</a>
+                                        </li>
+                                        <li><a href="#">Bin Locations</a>
+                                        </li>
+                                        <li><a href="#">Cycle Counts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-cogs"></i> <span>Services</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Tasks</a>
+                                        </li>
+                                        <li><a href="#">Technicians</a>
+                                        </li>
+                                        <li><a href="#">PM Codes</a>
+                                        </li>
+                                        <li><a href="#">Preventive Maintenance</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-truck"></i> <span>Units</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Units</a>
+                                        </li>
+                                        <li><a href="#">Unit Types</a>
+                                        </li>
+                                        <li><a href="#">Meter Types</a>
+                                        </li>
+                                        <li><a href="#">Meter Records</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-footprint"></i> <span>Accounting</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Steps wizard</a>
+                                        </li>
+                                        <li><a href="#">Form wizard</a>
+                                        </li>
+                                        <li><a href="#">Stepy wizard</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-ul"><i class="icon-spell-check"></i> <span>Configuration</span></a>
+                                    <ul class="hidden-ul">
+                                        <li><a href="#">Summernote editor</a>
+                                        </li>
+                                        <li><a href="#">CKEditor</a>
+                                        </li>
+                                        <li><a href="#">WYSIHTML5 editor</a>
+                                        </li>
+                                        <li><a href="#">Code editor</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                    
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Page header -->
+                <div class="page-header">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                          <h4><em class="icon-users4 position-left"></em> <span class="text-semibold">Customers</span></h4>
+                        </div>
+                        <div class="heading-elements">
+                            <form class="heading-form" action="#">
+                                <div class="form-group">
+                                    <div class="has-feedback">
+                                        <input type="search" class="form-control" placeholder="Search">
+                                        <div class="form-control-feedback">
+                                            <i class="icon-search4 text-size-small text-muted"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+                    </div>
+
+                    <div class="breadcrumb-line">
+                        <ul class="breadcrumb">
+                            <li><a href="#"> Home</a>
+                            </li>
+                            <li><a href="#"> Accounts</a>
+                            </li>
+                            <li class="active">Customers</li>
+                        </ul>
+
+                        <ul class="breadcrumb-elements">
+                            <li><a href="search.html"><i class="icon-comment-discussion position-left"></i> Support</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-gear position-left"></i> Settings
+                                    <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><i class="icon-user-lock"></i> Account security</a>
+                                    </li>
+                                    <li><a href="#"><i class="icon-statistics"></i> Analytics</a>
+                                    </li>
+                                    <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="icon-gear"></i> All settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+                    </div>
+                </div>
+                <!-- /page header -->
+
+
+                <!-- Content area -->
+                <div class="content">
+
+					 <!-- Quick stats boxes -->
+					<div class="row">
+								<div class="col-lg-4">
+
+									<!-- Members online -->
+									<div class="panel bg-blue-700">
+										<div class="panel-body">
+											<div class="heading-elements">
+												<span class="heading-text badge bg-teal-800">+53,6%</span>
+											</div>
+
+											<h3 class="no-margin">3,450</h3>
+											Members online
+											<div class="text-muted text-size-small">489 avg</div>
+										</div>
+
+										<div class="container-fluid">
+											<div id="members-online"></div>
+										</div>
+									</div>
+									<!-- /members online -->
+
+								</div>
+
+								<div class="col-lg-4">
+
+									<!-- Current server load -->
+									<div class="panel bg-pink-400">
+										<div class="panel-body">
+											<div class="heading-elements">
+												<ul class="icons-list">
+							                		<li class="dropdown">
+							                			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i> <span class="caret"></span></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-sync"></i> Update data</a></li>
+															<li><a href="#"><i class="icon-list-unordered"></i> Detailed log</a></li>
+															<li><a href="#"><i class="icon-pie5"></i> Statistics</a></li>
+															<li><a href="#"><i class="icon-cross3"></i> Clear list</a></li>
+														</ul>
+							                		</li>
+							                	</ul>
+											</div>
+
+											<h3 class="no-margin">49.4%</h3>
+											Current server load
+											<div class="text-muted text-size-small">34.6% avg</div>
+										</div>
+
+										<div id="server-load"></div>
+									</div>
+									<!-- /current server load -->
+
+								</div>
+
+								<div class="col-lg-4">
+
+									<!-- Today's revenue -->
+									<div class="panel bg-orange-400">
+										<div class="panel-body">
+											<div class="heading-elements">
+												<ul class="icons-list">
+							                		<li><a data-action="reload"></a></li>
+							                	</ul>
+						                	</div>
+
+											<h3 class="no-margin">$18,390</h3>
+											Today's revenue
+											<div class="text-muted text-size-small">$37,578 avg</div>
+										</div>
+
+										<div id="today-revenue"></div>
+									</div>
+									<!-- /today's revenue -->
+
+								</div>
+							</div>
+					<!-- /quick stats boxes -->
+                    
+                    <!-- Individual column searching (text inputs) -->
+					<div class="panel panel-flat">
+						<div class="panel-heading">
+							<h3 class="panel-title">Customer Profile Search</h3>
+							<div class="heading-elements">
+								<ul class="icons-list">
+			                		<li><a data-action="collapse"></a></li>
+			                		<li><a data-action="reload"></a></li>
+			                		<li><a data-action="close"></a></li>
+			                	</ul>
+		                	</div>
+						</div>
+
+						<div class="panel-body">
+							<div class="btn-group">
+									<button type="button" class="btn bg-blue-700" data-toggle="modal" data-target="#modal_form_vertical">New Customer <i class="icon-plus-circle2 position-right"></i></button>
+									
+									
+						  </div>	
+						</div>
+
+						<table class="table datatable-column-search-inputs">
+							<thead>
+								<tr>
+					                <th>Name</th>
+					                <th>Position</th>
+					                <th>Age</th>
+					                <th>Start date</th>
+					                <th>Salary</th>
+					                <th class="text-center">Actions</th>
+					            </tr>
+							</thead>
+							<tbody>
+								<tr>
+					                <td>Tiger Nixon</td>
+					                <td>System Architect</td>
+					                <td>61</td>
+					                <td><a href="#">2011/04/25</a></td>
+					                <td><span class="label label-info">$320,800</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Garrett Winters</td>
+					                <td>Accountant</td>
+					                <td>63</td>
+					                <td><a href="#">2011/07/25</a></td>
+					                <td><span class="label label-danger">$170,750</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Ashton Cox</td>
+					                <td>Junior Technical Author</td>
+					                <td>66</td>
+					                <td><a href="#">2009/01/12</a></td>
+					                <td><span class="label label-default">$86,000</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Cedric Kelly</td>
+					                <td>Senior Javascript Developer</td>
+					                <td>22</td>
+					                <td><a href="#">2012/03/29</a></td>
+					                <td><span class="label label-success">$433,060</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Airi Satou</td>
+					                <td>Accountant</td>
+					                <td>33</td>
+					                <td><a href="#">2008/11/28</a></td>
+					                <td><span class="label label-danger">$162,700</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Brielle Williamson</td>
+					                <td>Integration Specialist</td>
+					                <td>61</td>
+					                <td><a href="#">2012/12/02</a></td>
+					                <td><span class="label label-info">$372,000</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Herrod Chandler</td>
+					                <td>Sales Assistant</td>
+					                <td>59</td>
+					                <td><a href="#">2012/08/06</a></td>
+					                <td><span class="label label-danger">$137,500</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Rhona Davidson</td>
+					                <td>Integration Specialist</td>
+					                <td>55</td>
+					                <td><a href="#">2010/10/14</a></td>
+					                <td><span class="label label-default">$97,900</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Colleen Hurst</td>
+					                <td>Javascript Developer</td>
+					                <td>39</td>
+					                <td><a href="#">2009/09/15</a></td>
+					                <td><span class="label label-success">$405,500</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Sonya Frost</td>
+					                <td>Software Engineer</td>
+					                <td>23</td>
+					                <td><a href="#">2008/12/13</a></td>
+					                <td><span class="label label-danger">$103,600</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Jena Gaines</td>
+					                <td>Office Manager</td>
+					                <td>30</td>
+					                <td><a href="#">2008/12/19</a></td>
+					                <td><span class="label label-danger">$90,560</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Quinn Flynn</td>
+					                <td>Support Lead</td>
+					                <td>22</td>
+					                <td><a href="#">2013/03/03</a></td>
+					                <td><span class="label label-info">$342,000</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Charde Marshall</td>
+					                <td>Regional Director</td>
+					                <td>36</td>
+					                <td><a href="#">2008/10/16</a></td>
+					                <td><span class="label label-success">$470,600</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Haley Kennedy</td>
+					                <td>Senior Marketing Designer</td>
+					                <td>43</td>
+					                <td><a href="#">2012/12/18</a></td>
+					                <td><span class="label label-danger">$113,500</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+					            <tr>
+					                <td>Tatyana Fitzpatrick</td>
+					                <td>Regional Director</td>
+					                <td>19</td>
+					                <td><a href="#">2010/03/17</a></td>
+					                <td><span class="label label-info">$385,750</span></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+													<li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+					            </tr>
+							</tbody>
+							<tfoot>
+								<tr>
+					                <td>Name</td>
+					                <td>Position</td>
+					                <td>Age</td>
+					                <td>Start date</td>
+					                <td>Salary</td>
+					                <td></td>
+					            </tr>
+							</tfoot>
+						</table>
+					</div>
+					<!-- /individual column searching (text inputs) -->
+
+					 <!-- Vertical form modal -->
+					<div id="modal_form_vertical" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h5 class="modal-title">New Customer Profile</h5>
+								</div>
+
+								<form action="#">
+									<div class="modal-body">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-sm-4">
+													<label>First Name</label>
+													<input type="text"  class="form-control">
+												</div>
+
+												<div class="col-sm-4">
+													<label>Last Name</label>
+													<input type="text"  class="form-control">
+												</div>
+                                                
+                                                <div class="col-sm-4">
+														<div class="form-group">
+                                                        <label>Company</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="row">
+												<div class="col-sm-4">
+													<label>Shipping Address</label>
+													<input type="text" class="form-control">
+												</div>
+
+												<div class="col-sm-4">
+													<label>City</label>
+													<input type="text" class="form-control">
+												</div>
+                                                 <div class="col-sm-2">
+														<div class="form-group">
+                                                        <label>Region</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                <div class="col-sm-2">
+													<label>Post Code</label>
+													<input type="text"  class="form-control">
+												</div>
+											</div>
+										</div>
+                                        
+                                        	<div class="form-group">
+												<div class="row">
+												<div class="col-sm-4">
+													<label>Billing Address</label>
+													<input type="text" class="form-control">
+												</div>
+
+												<div class="col-sm-4">
+													<label>City</label>
+													<input type="text" class="form-control">
+												</div>
+                                                 <div class="col-sm-2">
+														<div class="form-group">
+                                                        <label>Region</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                <div class="col-sm-2">
+													<label>Post Code</label>
+													<input type="text"  class="form-control">
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="row">
+												<div class="col-sm-6">
+													<label>Email</label>
+													<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+												</div>
+
+												<div class="col-sm-6">
+													<label>Phone #</label>
+													<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+												</div>
+											</div>
+										</div>
+                                        
+                                        <div class="form-group">
+											<div class="row">
+                                            	 <div class="col-sm-2">
+														<div class="form-group">
+                                                        <label>Tax Entity</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                 <div class="col-sm-2">
+														<div class="form-group">
+                                                        <label>Tax Status</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                 <div class="col-sm-2">
+														<div class="form-group">
+                                                        <label>Terms</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                 <div class="col-sm-2">
+														<div class="form-group">
+                                                        <label>Sales Type</label>
+                                                        <select class="bootstrap-select" data-live-search="true" data-width="100%">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IA">Iowa</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+												</div>
+                                              </div>
+                                        </div>
+                                       
+                                       	<div class="form-group">
+											<div class="row">
+												<div class="col-sm-12">
+													<label>Notes</label>
+													<textarea rows="5" cols="5" name="textarea" class="form-control" required placeholder="Default textarea"></textarea>
+												</div>
+											</div>
+										</div> 
+                                        
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+										<button type="submit" class="btn btn-primary">Submit form</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- /vertical form modal -->
+						
+                    <!-- Footer -->
+                    <div class="navbar navbar-default navbar-sm navbar-fixed-bottom">
+                        <ul class="nav navbar-nav no-border visible-xs-block">
+                            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a>
+                            </li>
+                        </ul>
+
+                        <div class="navbar-collapse collapse" id="navbar-second">
+                            <div class="navbar-text">
+                                © 2015. <a href="#">LinkEDGE</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Evolve Systems</a>
+                            </div>
+
+                            <div class="navbar-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Help center</a>
+                                    </li>
+                                    
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="icon-cog3"></i>
+                                            <span class="visible-xs-inline-block position-right">Settings</span>
+                                            <span class="caret"></span>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li><a href="#"><i class="icon-dribbble3"></i> Dribbble</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-pinterest2"></i> Pinterest</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-github"></i> Github</a>
+                                            </li>
+                                            <li><a href="#"><i class="icon-stackoverflow"></i> Stack Overflow</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /footer -->
+
+                </div>
+                <!-- /content area -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+
+
+
+
+
+</body>
